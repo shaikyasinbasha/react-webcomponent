@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+}
+
+
+h1.title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.form-control .label{
+  margin-bottom: 5px;
+}
+
+.register-form{
+  width: 400px;
+  margin: 0 auto;
+  background-color: honeydew;
+  padding: 40px;
+}
+
+.register-form-title{
+  text-align: center;
+}
