@@ -2,7 +2,9 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
-  padding: 10px;
+  padding: 10px;  
+  background-color: #00839d;
+  color: #FFF;
 }
 
 
@@ -14,6 +16,7 @@ h1.title{
 .form-control{
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 12px;
 }
 .form-control .label{
   margin-bottom: 5px;
@@ -22,8 +25,35 @@ h1.title{
 .register-form{
   width: 400px;
   margin: 0 auto;
-  background-color: honeydew;
+  background-color: #efefef;
   padding: 40px;
+  color: #000;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #206fad;
+    border-color: #206fad;
+}
+
+.signup-btn{
+  width: 100%;
 }
 
 .register-form-title{

@@ -25,25 +25,28 @@ class HTMLWebcomponent extends React.Component {
           <label>REACT with HTML WEB COMPONENT</label>
           <i className="fa fa-refresh" onClick={this.loadData}></i>
         </h1>
-        <hr/>
         <div className="register-form">
-        <div className="register-form-title">
-          <h3>Sing Up</h3>
-          <h5>It's Free and only takes a mints</h5>
-        </div>
-        {
-          FORM_CONFIGS.map(item => {
-            return <div className="form-control" key={item.name}>
-              <div className="label"><label>{item.label}</label></div>
-              <CWCInput
-                name={item.name}
-                value={formdata[item.name]}
-                type={item.type}
-                dispatch={dispatch}
-              />
-            </div>
-          })
-        }
+          <div className="register-form-title">
+            <h3>Sing Up</h3>
+            <h5>It's Free and only takes a mints</h5>
+          </div>
+          {
+            FORM_CONFIGS.map(item => {
+              return <div className="form-control" key={item.name}>
+                <div className="label"><label>{item.label}</label></div>
+                <CWCInput
+                  name={item.name}
+                  value={formdata[item.name]}
+                  type={item.type}
+                  dispatch={dispatch}
+                />
+              </div>
+            })
+          }
+          <div>
+            <br/>
+            <a href="#/result"><button className="btn btn-primary signup-btn">Join Now</button></a>
+          </div>
         </div>
       </>
     }
