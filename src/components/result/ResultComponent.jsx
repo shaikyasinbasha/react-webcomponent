@@ -1,15 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import CWCInput from '../common/CWCInput';
 import { FORM_CONFIGS } from '../../config/form_config';
-import { loadFormData } from '../../actions/appaction';
 
 class ResultComponent extends React.Component {
-    constructor() {
-      super();
-    }
     render () {
-      const {dispatch, formdata} = this.props;
+      const {formdata} = this.props;
       return <>
         <h1 className="title">
           <label>REACT with HTML WEB COMPONENT</label>
