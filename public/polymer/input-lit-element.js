@@ -13,10 +13,10 @@ define(["exports"], function (_exports) {
   _exports.svg = _exports.supportsAdoptingStyleSheets$1 = _exports.supportsAdoptingStyleSheets = _exports.reparentNodes$1 = _exports.reparentNodes = _exports.render$1 = _exports.render$2 = _exports.render = _exports.removeNodes$1 = _exports.removeNodes = _exports.parts$1 = _exports.parts = _exports.nothing$1 = _exports.nothing = _exports.notEqual$1 = _exports.notEqual = _exports.nodeMarker = _exports.noChange$1 = _exports.noChange = _exports.markerRegex = _exports.marker = _exports.lastAttributeNameRegex = _exports.isTemplatePartActive$1 = _exports.isTemplatePartActive = _exports.isPrimitive$1 = _exports.isPrimitive = _exports.isIterable$1 = _exports.isIterable = _exports.isDirective$1 = _exports.isDirective = _exports.isCEPolyfill = _exports.html$2 = _exports.html$1 = _exports.html = _exports.eventOptions$1 = _exports.eventOptions = _exports.directive$1 = _exports.directive = _exports.defaultTemplateProcessor$1 = _exports.defaultTemplateProcessor = _exports.defaultConverter$1 = _exports.defaultConverter = _exports.customElement$1 = _exports.customElement = _exports.css$1 = _exports.css = _exports.createMarker$1 = _exports.createMarker = _exports.boundAttributeSuffix = _exports.UpdatingElement$1 = _exports.UpdatingElement = _exports.TemplateResult$3 = _exports.TemplateResult$2 = _exports.TemplateResult$1 = _exports.TemplateResult = _exports.TemplateInstance$1 = _exports.TemplateInstance = _exports.Template$1 = _exports.Template = _exports.SVGTemplateResult$2 = _exports.SVGTemplateResult$1 = _exports.SVGTemplateResult = _exports.PropertyPart$1 = _exports.PropertyPart = _exports.PropertyCommitter$1 = _exports.PropertyCommitter = _exports.NodePart$1 = _exports.NodePart = _exports.LitElement = _exports.InputLitElement = _exports.EventPart$1 = _exports.EventPart = _exports.DefaultTemplateProcessor$1 = _exports.DefaultTemplateProcessor = _exports.CSSResult$1 = _exports.CSSResult = _exports.BooleanAttributePart$1 = _exports.BooleanAttributePart = _exports.AttributePart$1 = _exports.AttributePart = _exports.AttributeCommitter$1 = _exports.AttributeCommitter = _exports.$updatingElement = _exports.$templateResult = _exports.$templateInstance = _exports.$templateFactory = _exports.$template = _exports.$shadyRender = _exports.$render = _exports.$parts = _exports.$part = _exports.$modifyTemplate = _exports.$litHtml = _exports.$litElement = _exports.$inputLitElement = _exports.$dom = _exports.$directive = _exports.$defaultTemplateProcessor = _exports.$decorators = _exports.$cssTag = void 0;
   _exports.unsafeCSS$1 = _exports.unsafeCSS = _exports.templateCaches$1 = _exports.templateCaches = _exports.svg$2 = _exports.svg$1 = void 0;
 
-  function _templateObject_2b3e58a0470b11ea837f0780217e2c19() {
-    var data = babelHelpers.taggedTemplateLiteral(["\n\n      <style> \n        :host *, ::after, ::before {\n          box-sizing: border-box;\n          font-family: 'Zhi Mang Xing', cursive;\n        }  \n        :host input {\n          display: block;\n          width: 100%;\n          height: calc(1.5em + .75rem + 2px);\n          padding: .375rem .75rem;\n          font-size: 1rem;\n          font-weight: 400;\n          line-height: 1.5;\n          color: #495057;\n          background-color: #fff;\n          background-clip: padding-box;\n          border: 1px solid #ced4da;\n          border-radius: .25rem;\n          transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;\n        }     \n        :host .polymer-container{\n          border: 5px solid red;\n          padding: 20px;\n        }\n      </style>\n      <style>\n        @import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');\n      </style>\n\n      <div class=\"polymer-container\">\n        <h1>\n          Polymer Shadow Area: ", "\n        </h1>\n        <div class=\"input-container\"><input name=\"myinput\"\n          type=\"text\"\n          @keyup=\"", "\" >\n        </div>\n\n      </div>\n\n    "]);
+  function _templateObject_54b08740489a11ea98e83de44e247b57() {
+    var data = babelHelpers.taggedTemplateLiteral(["\n\n      <style> \n        :host *, ::after, ::before {\n          box-sizing: border-box;\n          font-family: 'Zhi Mang Xing', cursive;\n        }  \n        :host input {\n          display: block;\n          width: 100%;\n          height: calc(1.5em + .75rem + 2px);\n          padding: .375rem .75rem;\n          font-size: 1rem;\n          font-weight: 400;\n          line-height: 1.5;\n          color: #495057;\n          background-color: #fff;\n          background-clip: padding-box;\n          border: 1px solid #ced4da;\n          border-radius: .25rem;\n          transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;\n        }\n      </style>\n      <style>\n        @import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');\n      </style>\n\n             \n      <div class=\"input-container\">\n        <input name=\"myinput\"\n          type=\"", "\"\n          name=\"", "\"\n          value=\"", "\"\n          @keyup=\"", "\" >\n      </div>\n    "]);
 
-    _templateObject_2b3e58a0470b11ea837f0780217e2c19 = function _templateObject_2b3e58a0470b11ea837f0780217e2c19() {
+    _templateObject_54b08740489a11ea98e83de44e247b57 = function _templateObject_54b08740489a11ea98e83de44e247b57() {
       return data;
     };
 
@@ -3551,11 +3551,17 @@ define(["exports"], function (_exports) {
       key: "properties",
       get: function get() {
         return {
-          message: {
-            type: String
+          value: {
+            type: String,
+            reflect: true
           },
-          pie: {
-            type: Boolean
+          type: {
+            type: String,
+            reflect: true
+          },
+          name: {
+            type: String,
+            reflect: true
           }
         };
       }
@@ -3566,31 +3572,24 @@ define(["exports"], function (_exports) {
 
       babelHelpers.classCallCheck(this, InputLitElement);
       _this11 = babelHelpers.possibleConstructorReturn(this, babelHelpers.getPrototypeOf(InputLitElement).call(this));
-      _this11.loadComplete = false;
-      _this11.message = 'Text Here';
-      _this11.pie = false;
+      _this11.value = '';
       return _this11;
     }
 
     babelHelpers.createClass(InputLitElement, [{
       key: "render",
       value: function render() {
-        return html(_templateObject_2b3e58a0470b11ea837f0780217e2c19(), this.message, this.togglePie);
+        return html(_templateObject_54b08740489a11ea98e83de44e247b57(), this.type, this.name, this.value, this.onChangeKeyup);
       }
     }, {
-      key: "firstUpdated",
-      value: function firstUpdated() {
-        var input = this.shadowRoot.querySelector('input');
-        input.focus();
-      }
-    }, {
-      key: "togglePie",
-      value: function togglePie(e) {
+      key: "onChangeKeyup",
+      value: function onChangeKeyup(e) {
         console.log(e.target.value);
         this.message = e.target.value;
         var event = new CustomEvent('poly-input-keyup', {
           detail: {
-            value: e.target.value
+            value: e.target.value,
+            name: this.name
           }
         });
         this.dispatchEvent(event);
